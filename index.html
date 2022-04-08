@@ -130,31 +130,58 @@
      </div>
  </aside>
 
- <section class="form__container">
-     <div class="form__information">
-         <h1 class="form__title">Any questions?</h1>
-         <p class="form__sub">Leave your email address of call us!</p>
-         <h4 class="form__email">info@bestshop.xyz</h4>
-         <h4 class="form__phone">123 456 789</h4>
-     </div>
-     <form class="form__box">
-        <p class="input__title__name">NAME</p>
-        <label class="input__label" for="">
-           <input class="input__name" type="text">
-        </label>
-        <p class="input__title__email">EMAIL</p>
-          <label class="input__label" for="">
-           <input class="input__email" type="email">
-        </label>
-        <br>
-        <label class="checkbox">
-            <input type="checkbox">
-            <span></span>
-            <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-            <!-- <button class="checkbox__send">Send</button>     -->
-        </label>
+ <section class="contact container" id="contact">
+
+    <div class="contact__column">
+      <h2 class="contact__title">Any questions?</h2>
+      <p class="contact__instruction">
+        Leave your email address or contact us!
+      </p>
+      <div class="contact__details">
+        <a href="mailto:info@bestshop.xyz" class="details__item">
+          <img src="assets/Mail%20Icon.svg" alt="mail"/>
+          info@bestshop.xyz
+        </a>
+
+        <a href="tel:123456789" class="details__item">
+          <img src="assets/Phone%20Icon.svg" alt="phone"/>
+          123 456 789
+        </a>
+      </div>
+    </div>
+
+    <div class="contact__column">
+      <form class="form">
+        <div class="form__field">
+          <label class="form__label" for="name">Name</label>
+          <input type="text" class="form__input name" id="name" />
+        </div>
+
+        <div class="form__field">
+          <label class="form__label" for="email">E-mail</label>
+          <input type="email" class="form__input email" id="email" />
+        </div>
+
+        <div class="form__consent">
+          <label class="form__checkbox">
+            <input type="checkbox"/>
+            <span class="checkbox"></span>
+            <p class="consent__text">
+              I hereby give consent for my personal data included in my
+              application to be processed for the purposes of the recruitment
+              process under the European Parliament’s and Council of the
+              European Union Regulation on the Protection of Natural Persons as
+              of 27 April 2016, with regard to the processing of personal data
+              and on the free movement of such data, and repealing Directive
+              95/46/EC (Data Protection Directive)
+            </p>
+          </label>
+        </div>
+        <button type="submit" class="btn btn--primary">Send</button>
       </form>
- </section>
+    </div>
+  </section>
+</main>
 
  <footer class="footer">
      <div class="footer__left">
